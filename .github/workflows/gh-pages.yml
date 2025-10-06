@@ -18,7 +18,7 @@ jobs:
         with:
           creds: ${{ secrets.GH_APP_CREDS }}
 
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           submodules: true
           fetch-depth: 0
@@ -41,7 +41,7 @@ jobs:
           yarn docs
 
       - name: Prepare docs
-        uses: malept/github-action-gh-pages@f7952a65c4b763dc84b824a530dc38bd375ac91e # tag: v1.4.0
+        uses: malept/github-action-gh-pages@650f950700faa00064f6fc9d2c4c801ec89b75b7 # tag: v1.4.1
         with:
           cname: js.electronforge.io
           defaultBranch: main
